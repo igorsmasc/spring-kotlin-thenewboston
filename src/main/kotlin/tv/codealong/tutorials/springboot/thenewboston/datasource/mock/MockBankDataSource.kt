@@ -8,7 +8,7 @@ import tv.codealong.tutorials.springboot.thenewboston.model.Bank
 class MockBankDataSource : BankDataSource{
 
     val banks = listOf(
-        Bank("123",
+        Bank("abcdf",
             1.0, 10),
         Bank("123",
             1.0, 0),
