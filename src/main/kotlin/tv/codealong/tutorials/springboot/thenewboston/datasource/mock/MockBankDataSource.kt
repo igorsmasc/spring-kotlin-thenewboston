@@ -10,13 +10,14 @@ class MockBankDataSource : BankDataSource{
     val banks = listOf(
         Bank("abcdf",
             1.0, 10),
-        Bank("123",
-            1.0, 0),
+        Bank("1234",
+            0.7, 17),
         Bank("123",
             0.0, 10)
     )
 
 
     override fun retrieveBanks(): Collection<Bank> = banks
+    override fun retrieveBank(accountNumber: String): Bank = banks.first { it.accountNumber == accountNumber }
 
 }
